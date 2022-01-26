@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,29 +7,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Tic Tac Toe</title>
+    <title>Page d'accueil</title>
+
 </head>
-<body>
+<body class ="bodyindex">
 
-<div class="container">
-<h1 class="title">Tic <span> Tac</span> Toe</h1>
+<div class="loader">
+			<span>T</span>
+			<span>I</span>
+			<span>C</span>
+			<span>T</span>
+			<span>A</span>
+			<span>C</span>
+			<span>T</span>
+            <span>O</span>
+            <span>E</span>
+			
 
-<div class="status-action">
-<div class="status">x is the next</div>
-<div class="reset">Reset</div>
- </div>
-   <div class="game-grid">
+		</div>
 
-       <div class="game-cell"></div>
-       <div class="game-cell"></div>
-       <div class="game-cell"></div>
-       <div class="game-cell"></div>
-       <div class="game-cell"></div>
-       <div class="game-cell"></div>
-       <div class="game-cell"></div>
-       <div class="game-cell"></div>
-       <div class="game-cell"></div>
-   </div> 
- </div>
+
+    
 </body>
-</html> 
+</html>
