@@ -83,8 +83,31 @@ function checkWinStatus(selectedButtonId, player){
     [1,4,7],
     [2,5,8],
     [0,4,8],
-    [2,4,6], 
-  ]
+    [2,4,6] 
+  ];
+
+  $.each(winningCombinations, function(key,winPositions){
+
+      if($.inArray(selectedButtonId, winPositions)){
+
+        winCount = 0;
+        $.each(winPositions, function(key, value){
+
+          playerValue = $ ("#" + value).attr("data-player");
+          if(playerValue == player){
+
+            winCount++;
+            console.log(winCount);
+
+
+          }
+
+        });
+
+      }
+
+  });
+
 }
 </script>
 
