@@ -43,10 +43,50 @@ $(function(){
         $(this).text("X");
         $(this).attr("data-occupied", 1);
         $(this).attr("data-player", "human");
+        $("button").each(function(){
+          $(this).addClass("disabled");
+        });
+        checkWinStatus(humanSelectedButtonId, "human");
+        setTimeout(function(){
+
+          computersTurn()
+
+        }, 500); 
+        
     }
   });
 });
+
+function computersTurn(){ 
+var possibleChoices = $ ('[data-occupied="0"]');
+var numberOfPossibleChoices = possibleChoices.length;
+var random = Math.floor(Math.random()*numberOfPossibleChoices);
+var computerChoice = possibleChoices[random];
+var computerSelectedButtonId = $(computerChoice).attr("id");
+$(computerChoice).addClass("btn btn-success disabled");
+$(computerChoice).removeClass("btn-secondary");
+$(computerChoice).text("O");
+$(computerChoice).attr("data-occupied", 1);
+$(computerChoice).attr("data-player", "computer");
+$('[data-occupied="0"]').each(function(){
+          $(this).removeClass("disabled");
+        });
+        checkWinStatus(computerSelectedButtonId, "computer");
+}
+
+function checkWinStatus(selectedButtonId, player){
+  var winningCombinations = [
+    [0,1,2],
+    [3,4,5],
+    [6,7,8],
+    [0,3,6],
+    [1,4,7],
+    [2,5,8],
+    [0,4,8],
+    [2,4,6], 
+  ]
+}
 </script>
 
 </body>
-</html>
+</html>  
