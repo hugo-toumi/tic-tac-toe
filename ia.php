@@ -7,9 +7,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link href="jeu.css" rel="stylesheet">
-  <title>TicTacToe</title>
+  <title>TicTacToe Game</title>
 </head>
-<body>
+
+<body class="bodyia">
+
+
+<a href="ia.php"><div id="testbutton"></div></a>
+
   <div class="container">
     <div class="d-flex justify-content-center">
     <table>
@@ -31,7 +36,11 @@
 
     </div>
     <div class="d-flex justify-content-center" id="result">
+
 </div>
+
+
+
 
 <script>
 $(function(){
@@ -133,6 +142,8 @@ function gameOver(player){
 }
 
 </script>
+
+
 
 </body>
 </html>  

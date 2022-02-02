@@ -1,8 +1,79 @@
-.customButton{
+/* JEU */
 
+.customButton{
     height: 130px;
     width: 130px;
     border-radius: 65px;
     margin: 20px;
     font-size: 60px;
 }
+
+.bodyia {
+    background: url(robot.jpg);
+    background-size: cover;
+}
+
+.d-flex {
+    margin-right: 40%;      
+}
+
+
+/* BOUTON RESTART */
+  
+  #testbutton {
+    width: 165px;
+    height:50px;
+    border-radius:180px;
+    position:relative;
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    cursor:pointer;
+    line-height:12px;
+    margin-top: 2%;
+    margin-left: 2%;
+
+    
+  }
+  
+  #testbutton:before {
+    content:'';
+    z-index:1;
+    position:absolute;
+    display:block;
+    width:80%;
+    height:70%;
+    top:15%;
+    left:10%;
+    transition: 0.3s opacity ease-in-out;
+    filter:blur(15px);
+    opacity:0;
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  }
+  
+  #testbutton:hover:before {
+    opacity:1;
+    transition: 0.3s opacity ease-in-out;
+    filter:blur(25px);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);  
+  }
+  
+  #testbutton:after {
+    font-family: "COMPUTER Robot";
+    content:'RESTART';
+    text-align:center;
+    line-height:40px;
+    font-size:38px;
+    color:rgb(0, 0, 0);
+    font-weight:bold;
+    z-index:5;
+    position:absolute;
+    display:block;
+    border-radius:180px;
+    width:92%;
+    height:80%;
+    top:10%;
+    left:4%;  
+    background-color:rgb(255, 255, 255);
+  }
+
+
+ 
